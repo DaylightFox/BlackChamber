@@ -8,7 +8,7 @@ class vigenere():
         for i in range(len(txt)):
             if txt[i].isalpha():
                 val = self.abet.index(txt[i].upper()) + self.abet.index(key[i].upper())
-                while val > len(self.abet):
+                while val > 25:
                     val -= 26
                 out += self.abet[val]
             else:
